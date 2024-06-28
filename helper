@@ -17,3 +17,17 @@ flask db migrate
 flask db upgrade
 
 docker run -dp 5000:5000 -w /app -v "$(pwd):/app" teclado-site-flask sh -c "flask run --host 0.0.0.0"
+
+db postres
+
+postgre-flask-test-rest-api
+
+host ae = dpg-cpv47cdumphs73c5a3m0-a
+port = 5432
+database : postgre_flask_test_rest_api
+user : root
+password : a69gxzWqGblW6enthX5NZ5XSrCb51AKB
+
+postgresql://root:a69gxzWqGblW6enthX5NZ5XSrCb51AKB@dpg-cpv47cdumphs73c5a3m0-a/postgre_flask_test_rest_api
+postgresql://root:a69gxzWqGblW6enthX5NZ5XSrCb51AKB@dpg-cpv47cdumphs73c5a3m0-a.oregon-postgres.render.com/postgre_flask_test_rest_api
+PGPASSWORD=a69gxzWqGblW6enthX5NZ5XSrCb51AKB psql -h dpg-cpv47cdumphs73c5a3m0-a.oregon-postgres.render.com -U root postgre_flask_test_rest_api
